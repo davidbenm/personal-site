@@ -1,5 +1,9 @@
 /*******************************************TAG SELECTORS*******************************************/
 
+a:hover {
+    font-style: italic;
+}
+
 body {
     background-color: #EFFFFD;
 }
@@ -27,4 +31,10 @@ h3 {
 
 .mypicture {
     height: 180px;
+}
+
+/*******************************************ID SELECTORS*******************************************/
+
+#myname {
+    font-family: Georgia;
 }
