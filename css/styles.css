@@ -1,5 +1,20 @@
+/* 
+
+Index
+
+00 - General 
+01 - Sections
+02 - Header
+03 - Profile
+04 - Skills
+05 - Contact-me
+06 - Footer
+
+*/
+
+/* 00 - General */
+
 body {
-    margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
     color: #40514E;
@@ -7,77 +22,48 @@ body {
 
 h1 {
     margin: 0;
-    color: #1572A1;
     font-family: 'Rochester', cursive;
-    font-size: 5.625rem;
-    margin-top: 50px;
+    font-size: 5.5rem;
+    margin-top: 3rem;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #1572A1;
-    font-size: 1.5625rem;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #5584AC;
-}
-
-a {
-    color: #1572A1;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #EAF6F6;
 }
 
 p {
     line-height: 2;
 }
 
-hr {
-    border-color: #1572A1;
-    border-style: dotted none none;
-    border-width: 6px;
-    width: 5%;  
-    margin: 100px auto; 
+/* 01 - Sections */
+
+.colored-section {
+    background-color: #203239;
+    color: #fff;
+    padding: 3rem;
 }
 
-.top-container {
-    background-color: #B1D0E0;
-    position: relative;
-    padding-top: 100px;
+.white-section {
+    background-color: #fff;
+    color: #112B3C;
+    padding: 5rem;
 }
 
-.middle-container {
-    margin: 100px 0;
+/* 02 - Header */
+
+.header {
+    background-color: #141E27;
+    padding: 2rem;
+    color: #fff;
 }
 
-.bottom-container {
-    background-color: #B1D0E0;
-    padding: 50px 0;
-}
-
-.top-cloud {
-    position: absolute;
-    right: 350px;
-    top: 200px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 350px;
-    bottom: 240px;
-}
-
-.mountain {
-    height: 300px;
-}
+/* 03 - Profile */
 
 .my-picture {
     height: 150px;
@@ -89,24 +75,34 @@ hr {
     margin: auto;
 }
 
+/* 04 - Skills */
+
 .skill-row {
     width: 50%;
     margin: 100px auto;
     text-align: left;
 }
 
-.code1-image {
+.code-image {
     border-radius: 50%;
     height: 150px;
     float: left;
     margin-right: 30px;
 }
 
-.code2-image {
+.network-image {
     border-radius: 50%;
     height: 150px;
     float: right;
     margin-left: 30px;
+}
+
+/* 05 - Contact-me */
+
+.contact-me {
+    background-color: #fff;
+    color: #112B3C;
+    padding: 2rem 16rem;
 }
 
 .contact-message {
@@ -115,42 +111,19 @@ hr {
     margin: 30px auto 60px;
 }
 
-.btn {
-    background: #B1D0E0;
-    background-image: -webkit-linear-gradient(top, #B1D0E0, #1572A1);
-    background-image: -moz-linear-gradient(top, #B1D0E0, #1572A1);
-    background-image: -ms-linear-gradient(top, #B1D0E0, #1572A1);
-    background-image: -o-linear-gradient(top, #B1D0E0, #1572A1);
-    background-image: linear-gradient(to bottom, #B1D0E0, #1572A1);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #B1D0E0;
-    background-image: -webkit-linear-gradient(top, #B1D0E0, #B1D0E0);
-    background-image: -moz-linear-gradient(top, #B1D0E0, #B1D0E0);
-    background-image: -ms-linear-gradient(top, #B1D0E0, #B1D0E0);
-    background-image: -o-linear-gradient(top, #B1D0E0, #B1D0E0);
-    background-image: linear-gradient(to bottom, #B1D0E0, #B1D0E0);
-    text-decoration: none;
-  }
+/* 06 - Footer */
 
-.footer-link {
-    padding: 0 20px;
+#footer {
+    background-color: #141E27;
+    padding: 2rem;
+    color: #fff;
 }
 
-.copyright {
-    color: #EAF6F6;
-    padding: 50px 0 0 0;
-    margin: 0;
-    font-weight: bold;
-    font-family: 'Merriweather', serif;
-    font-size: 0.75rem;
+.social-icon {
+    padding: 0 1rem 1rem;
+    color: #fff;
+}
+
+.social-icon:hover {
+    color: #40514E;
 }
