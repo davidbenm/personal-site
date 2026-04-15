@@ -1,99 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>David Benítez - Personal Site</title>
-        <link rel="shortcut icon" href="favicon/favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Benítez – Telecommunications Engineer & Cloud specialist. PhD in SDN, working with GCP, Azure, Kubernetes, Terraform and Python.">
+    <title>David Benítez · Cloud Engineer</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico">
 
-        <!-- Google Fonts -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Merriweather&family=Montserrat:wght@300&family=Rochester&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
-        <!-- CSS Stylesheets -->
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/51b7e38bb1.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- Font Awesome -->
+<body>
 
-        <script src="https://kit.fontawesome.com/51b7e38bb1.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-        <!-- Header -->
-
-        <header>
-            <div class="header">
-                <h1>Hello, World!</h1>
-                <h2>I'm David, a Telecommunications Engineer.</h2>
-            </div>
-        </header>        
-
-        <div class="profile white-section">
-            <img class="my-picture" src="images/david.png" alt="">
-            <h2>Hello!</h2>
-            <p class="intro">I'm a Telecommunications Engineer finishing my doctoral studies, where I develop Software Defined 
-                Networking applications in Python. Enthusiastic and interested in cloud technologies, I'm specializing 
-                in Google Cloud Platform and in master the necessary tools to work as a Cloud Engineer or related roles.
-            </p>
-        </div>
-
-        <div class="skills colored-section">
-            <h2>My Skills</h2>
-            <div class="skill-row">
-                <img class="code-image" src="images/cloud.jpg" alt="">
-                <h3>Cloud Engineering</h3>
-                <p>I've been working with cloud providers like GCP and Microsoft Azure. 
-                    I manage technologies and tools such as Kubernetes, Python and Bash scripting, 
-                    among others that allow the cloud implementation of systems and applications.
-                </p>
-            </div>
-
-            <div class="skill-row">
-                <img class="network-image" src="images/network.jpg" alt="">
-                <h3>Networking</h3>
-                <p>I've been a member of network and data center management teams, improving their performance and 
-                    organization means virtualization.
-                </p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">DB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <p>Here you can find some of my work, if you are interested you can contact me by 
-                <a href="mailto:dbenitezm92@email.com">email</a>, or you can find 
-                me on GitHub or LinkedIn below.
-            </p>
-            <div class="my-work">
-                <a class="btn" href="https://github.com/davidbenm/python"><button type="button" class="btn btn-outline-dark">Python Repo</button></a>
-                <a class="btn" href="https://github.com/davidbenm/terraform"><button type="button" class="btn btn-outline-dark">Terraform Repo</button></a>
-                <a class="btn" href="https://github.com/davidbenm/ansible"><button type="button" class="btn btn-outline-dark">Ansible Repo</button></a>
-                <a class="btn" href="https://hub.docker.com/u/davidbenm"><button type="button" class="btn btn-outline-dark">My Docker Hub</button></a>
-                <a class="btn" href="https://github.com/davidbenm/kubernetes"><button type="button" class="btn btn-outline-dark">Kubernetes Repo</button></a>
-                <a class="btn" href="https://github.com/davidbenm/bash"><button type="button" class="btn btn-outline-dark">Bash Repo</button></a>
-                <a class="btn" href="https://davidbenm.github.io/demo-enterprise/"><button type="button" class="btn btn-outline-dark">Demo Enterprise Web</button></a>
-                <a class="btn" href="https://github.com/davidbenm/javascript-basics"><button type="button" class="btn btn-outline-dark">JavaScript Repo</button></a>
-                <a class="btn" href="https://github.com/davidbenm/node-express"><button type="button" class="btn btn-outline-dark">Node-Express Repo</button></a>
-            </div>
-            <div class="my-work">
-                
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1>David Benítez</h1>
+            <p class="hero-title">Telecommunications Engineer &middot; PhD &middot; Cloud Specialist</p>
+            <p class="hero-sub">Building scalable cloud infrastructure with GCP, Kubernetes, and Python.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-accent">View Projects</a>
+                <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
             </div>
         </div>
+    </section>
 
-        <footer class="bottom-container" id="footer">
-            <div class="footerimg">
-                <a href="https://www.linkedin.com/in/david-ben%C3%ADtez-machado/"><i class="fa-brands fa-linkedin social-icon fa-2x"></i></a>
-                <a href="https://github.com/davidbenm"><i class="fa-brands fa-github social-icon fa-2x"></i></a>
-                <p >© David Benítez Machado</p>
+    <!-- About -->
+    <section id="about" class="light-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-auto">
+                    <img class="profile-pic" src="images/david.png" alt="David Benítez">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I'm a Telecommunications Engineer with a <strong>PhD in Software Defined Networking</strong>, specialized in cloud-native infrastructure and network automation. I work with <strong>GCP</strong>, <strong>Microsoft Azure</strong>, and <strong>Kubernetes</strong> to design and automate scalable systems.</p>
+                    <p>Passionate about DevOps practices and infrastructure as code, I bring together networking fundamentals and modern cloud tooling to build reliable, efficient pipelines and environments.</p>
+                </div>
             </div>
-        </footer>        
-        
-        <!-- Bootstrap Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="dark-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Skills</h2>
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-5">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-cloud skill-icon-fa"></i>
+                            <h3>Cloud Engineering</h3>
+                        </div>
+                        <p>Cloud infrastructure design and automation across GCP and Azure, with Kubernetes for container orchestration and IaC tools for reproducible environments.</p>
+                        <div class="tech-badges">
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/googlecloud/googlecloud-original.svg" alt="GCP"> GCP</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/azure/azure-original.svg" alt="Azure"> Azure</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"> Kubernetes</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/terraform/terraform-original.svg" alt="Terraform"> Terraform</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/ansible/ansible-original.svg" alt="Ansible"> Ansible</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/docker/docker-original.svg" alt="Docker"> Docker</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt="Python"> Python</span>
+                            <span class="badge-tech"><i class="fa-solid fa-terminal"></i> Bash</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-network-wired skill-icon-fa"></i>
+                            <h3>Networking &amp; SDN</h3>
+                        </div>
+                        <p>PhD-level research in Software Defined Networking. Experience in data center management and network virtualization with focus on automation and performance.</p>
+                        <div class="tech-badges">
+                            <span class="badge-tech"><i class="fa-solid fa-diagram-project"></i> SDN</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt="Python"> Python</span>
+                            <span class="badge-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/linux/linux-original.svg" alt="Linux"> Linux</span>
+                            <span class="badge-tech"><i class="fa-solid fa-server"></i> Virtualization</span>
+                            <span class="badge-tech"><i class="fa-solid fa-database"></i> Data Centers</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="light-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects &amp; Repos</h2>
+            <div class="row justify-content-center g-4">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt="Python" class="project-icon">
+                        <h4>Python</h4>
+                        <p>Scripts, utilities and SDN applications in Python.</p>
+                        <a href="https://github.com/davidbenm/python" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/terraform/terraform-original.svg" alt="Terraform" class="project-icon">
+                        <h4>Terraform</h4>
+                        <p>Infrastructure as Code for cloud environments on GCP and Azure.</p>
+                        <a href="https://github.com/davidbenm/terraform" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/ansible/ansible-original.svg" alt="Ansible" class="project-icon">
+                        <h4>Ansible</h4>
+                        <p>Playbooks for configuration management and infrastructure automation.</p>
+                        <a href="https://github.com/davidbenm/ansible" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/docker/docker-original.svg" alt="Docker" class="project-icon">
+                        <h4>Docker Hub</h4>
+                        <p>Container images and Docker configurations for various workloads.</p>
+                        <a href="https://hub.docker.com/u/davidbenm" target="_blank" class="btn btn-project">View Hub <i class="fa-brands fa-docker"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="project-icon">
+                        <h4>Kubernetes</h4>
+                        <p>K8s manifests, deployments and cluster configuration examples.</p>
+                        <a href="https://github.com/davidbenm/kubernetes" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <i class="fa-solid fa-terminal project-icon-fa"></i>
+                        <h4>Bash</h4>
+                        <p>Shell scripts for system automation, tooling and DevOps tasks.</p>
+                        <a href="https://github.com/davidbenm/bash" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/javascript/javascript-original.svg" alt="JavaScript" class="project-icon">
+                        <h4>JavaScript</h4>
+                        <p>Frontend fundamentals and interactive web projects.</p>
+                        <a href="https://github.com/davidbenm/javascript-basics" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/nodejs/nodejs-original.svg" alt="Node.js" class="project-icon">
+                        <h4>Node-Express</h4>
+                        <p>Backend APIs and web services with Node.js and Express.</p>
+                        <a href="https://github.com/davidbenm/node-express" target="_blank" class="btn btn-project">View Repo <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="project-card">
+                        <i class="fa-solid fa-building project-icon-fa"></i>
+                        <h4>Demo Enterprise</h4>
+                        <p>Full enterprise-style web project demo with modern layout.</p>
+                        <a href="https://davidbenm.github.io/demo-enterprise/" target="_blank" class="btn btn-project">View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="dark-section">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">Get In Touch</h2>
+            <p class="contact-sub">Have a project in mind or want to connect? Reach out by email or find me on the platforms below.</p>
+            <a href="mailto:dbenitezm92@gmail.com" class="btn btn-accent mb-4">dbenitezm92@gmail.com</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/david-ben%C3%ADtez-machado/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/davidbenm" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 David Benítez Machado</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </html>

@@ -1,133 +1,382 @@
-/* 
+/*
 
 Index
 
-00 - General 
-01 - Sections
-02 - Header
-03 - Profile
-04 - Skills
-05 - Contact-me
-06 - Footer
+00 - Variables & Reset
+01 - Typography
+02 - Navbar
+03 - Hero
+04 - Sections
+05 - About
+06 - Skills
+07 - Projects
+08 - Contact
+09 - Footer
+10 - Buttons
 
 */
 
-/* 00 - General */
+/* 00 - Variables & Reset */
+
+:root {
+    --bg-dark:    #0D1B2A;
+    --bg-surface: #1A2B3C;
+    --bg-light:   #F5F8FC;
+    --accent:     #00BFFF;
+    --accent-hover: #009ED4;
+    --text-light: #E2EAF0;
+    --text-muted: #7A95B0;
+    --text-dark:  #1A2B3C;
+    --border-light: #E2EAF0;
+    --radius: 12px;
+    --transition: 0.25s ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    color: #40514E;
-}
-
-h1 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
     margin: 0;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.5rem;
-    margin-top: 3rem;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
+/* 01 - Typography */
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
 }
 
 p {
-    line-height: 2;
+    line-height: 1.8;
+    margin-bottom: 1rem;
 }
 
-/* 01 - Sections */
-
-.colored-section {
-    background-color: #203239;
-    color: #fff;
-    padding: 3rem;
+p:last-child {
+    margin-bottom: 0;
 }
 
-.white-section {
-    background-color: #fff;
-    color: #112B3C;
-    padding: 5rem;
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-/* 02 - Header */
+/* 02 - Navbar */
 
-.header {
-    background-color: #141E27;
-    padding: 2rem;
-    color: #fff;
+#navbar {
+    background-color: rgba(13, 27, 42, 0.96);
+    backdrop-filter: blur(8px);
+    padding: 0.85rem 0;
+    z-index: 1000;
 }
 
-/* 03 - Profile */
-
-.my-picture {
-    height: 150px;
+#navbar .navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--accent);
+    letter-spacing: 1px;
 }
 
-.intro {
-    width: 40%;
+#navbar .nav-link {
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color var(--transition);
+    padding: 0.25rem 0;
+}
+
+#navbar .nav-link:hover {
+    color: var(--accent);
+}
+
+/* 03 - Hero */
+
+#hero {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 7rem 1rem 6rem;
     text-align: center;
-    margin: auto;
 }
 
-/* 04 - Skills */
-
-.skill-row {
-    width: 50%;
-    margin: 100px auto;
-    text-align: left;
+.hero-greeting {
+    font-size: 1rem;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
 }
 
-.code-image {
-    border-radius: 50%;
-    height: 150px;
-    float: left;
-    margin-right: 30px;
-}
-
-.network-image {
-    border-radius: 50%;
-    height: 150px;
-    float: right;
-    margin-left: 30px;
-}
-
-/* 05 - Contact-me */
-
-.contact-me {
-    background-color: #fff;
-    color: #112B3C;
-    padding: 2rem 16rem;
-}
-
-.contact-message {
-    width: 40%;
-    text-align: center;
-    margin: 30px auto 60px;
-}
-
-.my-work {
-    margin: 2rem;
-}
-
-/* 06 - Footer */
-
-#footer {
-    background-color: #141E27;
-    padding: 2rem;
+#hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
     color: #fff;
+}
+
+.hero-title {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.8;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 04 - Sections */
+
+.light-section {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding: 5rem 1rem;
+}
+
+.dark-section {
+    background-color: var(--bg-surface);
+    color: var(--text-light);
+    padding: 5rem 1rem;
+}
+
+.dark-section .section-title {
+    color: var(--text-light);
+}
+
+/* 05 - About */
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    display: block;
+}
+
+#about .section-title {
+    margin-bottom: 1.25rem;
+}
+
+#about p {
+    color: #3A4F66;
+    font-size: 1.025rem;
+}
+
+#about strong {
+    color: var(--text-dark);
+}
+
+/* 06 - Skills */
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 2rem;
+    height: 100%;
+}
+
+.skill-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.skill-icon-fa {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.skill-card > p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.badge-tech {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgba(0, 191, 255, 0.08);
+    border: 1px solid rgba(0, 191, 255, 0.2);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.badge-tech img {
+    width: 15px;
+    height: 15px;
+}
+
+/* 07 - Projects */
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.project-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+.project-icon-fa {
+    font-size: 2.8rem;
+    color: var(--bg-surface);
+    margin-bottom: 1rem;
+}
+
+.project-card h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.project-card p {
+    font-size: 0.875rem;
+    color: #5A7089;
+    flex-grow: 1;
+    margin-bottom: 1.25rem;
+}
+
+/* 08 - Contact */
+
+.contact-sub {
+    color: var(--text-muted);
+    max-width: 480px;
+    margin: 0 auto 1.75rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
 }
 
 .social-icon {
-    padding: 0 1rem 1rem;
-    color: #fff;
+    color: var(--text-muted);
+    transition: color var(--transition);
 }
 
 .social-icon:hover {
-    color: #40514E;
+    color: var(--accent);
+}
+
+/* 09 - Footer */
+
+#footer {
+    background-color: var(--bg-dark);
+    color: var(--text-muted);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* 10 - Buttons */
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--accent);
+    transition: background-color var(--transition), border-color var(--transition);
+    display: inline-block;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: var(--bg-dark);
+}
+
+.btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    color: var(--text-light);
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    transition: all var(--transition);
+    display: inline-block;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.btn-project {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-size: 0.875rem;
+    border-radius: 8px;
+    padding: 0.45rem 1rem;
+    border: none;
+    transition: background-color var(--transition), color var(--transition);
+    display: inline-block;
+    margin-top: auto;
+}
+
+.btn-project:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
 }
