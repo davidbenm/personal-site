@@ -102,47 +102,94 @@ p:last-child {
 #hero {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    padding: 7rem 1rem 6rem;
-    text-align: center;
+    padding: 6rem 1rem 5rem;
+}
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-photo-wrap {
+    flex-shrink: 0;
+}
+
+.hero-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 0 6px rgba(0, 191, 255, 0.12), 0 8px 32px rgba(0,0,0,0.4);
+    display: block;
+}
+
+.hero-content {
+    text-align: left;
 }
 
 .hero-greeting {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--accent);
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
 #hero h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2.2rem, 5vw, 3.75rem);
     font-weight: 700;
     letter-spacing: -1px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: #fff;
 }
 
 .hero-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-muted);
     margin-bottom: 0.75rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 .hero-sub {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--text-light);
-    max-width: 520px;
-    margin: 0 auto 2.5rem;
+    max-width: 480px;
+    margin: 0 0 2rem;
     opacity: 0.8;
 }
 
 .hero-cta {
     display: flex;
     gap: 1rem;
-    justify-content: center;
     flex-wrap: wrap;
+}
+
+/* Hero responsive — mobile */
+@media (max-width: 640px) {
+    .hero-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .hero-content {
+        text-align: center;
+    }
+    .hero-sub {
+        margin: 0 auto 2rem;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+    .hero-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* 04 - Sections */
@@ -164,15 +211,6 @@ p:last-child {
 }
 
 /* 05 - About */
-
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    display: block;
-}
 
 #about .section-title {
     margin-bottom: 1.25rem;
